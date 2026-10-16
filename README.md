@@ -1,22 +1,43 @@
-# Clustering and Dimensionality Reduction
+# Clustering and Principal Component Analysis
 
-By Zenith Anthony Dabarera. SIT720 Machine Learning coursework.
+Explore how preprocessing, clustering algorithms and dimensionality reduction affect the structure found in data.
 
-K-Means, DBSCAN and PCA using obesity and gene-expression data.
+**Python · scikit-learn · K-Means · DBSCAN · PCA**
 
-## Files
+## Project at a glance
+
+The executed notebook contains clustering comparisons and PCA outputs. Review those figures alongside the report; visual separation alone is not evidence of useful clusters.
+
+## Technical work
+
+- Mixed-feature encoding and scaling
+- K-Means and K-Means++ comparison
+- Silhouette analysis and repeated clustering runs
+- DBSCAN parameter exploration and gene-expression PCA
+
+## Explore the evidence
 
 - [SIT720_4_1P_Zenith_Anthony_s225534396_Final_Code_Executed.ipynb](SIT720_4_1P_Zenith_Anthony_s225534396_Final_Code_Executed.ipynb)
 - [SIT720_4_1P_Zenith_Anthony_s225534396_Final_Report.pdf](SIT720_4_1P_Zenith_Anthony_s225534396_Final_Report.pdf)
 
-## Execution status
+## Run locally
 
-10 of 10 code cells have stored execution counts. Original notebook outputs are preserved; this publication did not rerun experiments. See the notebook and report for results and limitations.
+```bash
+python -m venv .venv
+# Activate the environment, then:
+python -m pip install jupyter numpy pandas matplotlib scikit-learn
+jupyter notebook
+```
 
-## Running
+Follow obesity_path, gene_data_path and gene_labels_path in the notebook. Gene-expression files can be large.
 
-Open the notebook in Jupyter or Google Colab and follow its dataset-loading instructions. Install the packages imported in the notebook. Input datasets may require separate download.
+Open the linked notebook and run the cells in order. Package names reflect the source imports; a fresh environment was not tested during this documentation update. Dataset downloads require internet access.
 
-## Scope
+## Limitations and status
 
-Educational experiments; no production or clinical validation is claimed. The uploaded notebooks and reports determine the actual project scope, which may differ from older assessment briefs.
+Two distinct public datasets: obesity and gene-expression data. Internal clustering measures and comparisons with supplied labels answer different questions.
+
+The repository preserves saved notebook outputs. Results are from those outputs, not a new execution.
+
+**Author:** Zenith Anthony Dabarera · SIT720 Machine Learning  
+[AI/ML portfolio](https://github.com/Zenith1997)
